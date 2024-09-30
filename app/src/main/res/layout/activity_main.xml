@@ -4,8 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp"
-    android:background="@android:color/white">
+    android:padding="24dp"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
 
     <EditText
         android:id="@+id/emailInput"
@@ -13,8 +23,11 @@
         android:layout_height="wrap_content"
         android:hint="Enter your email"
         android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"
+        android:hintTextColor="@android:color/darker_gray" />
 
     <EditText
         android:id="@+id/passwordInput"
@@ -22,15 +35,73 @@
         android:layout_height="wrap_content"
         android:hint="Enter your password"
         android:inputType="textPassword"
-        android:padding="12dp"
-        android:layout_marginBottom="32dp"/>
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:hintTextColor="@android:color/darker_gray" />
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:layout_gravity="center"
-        android:padding="10dp" />
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center" />
+
+    <CheckBox
+        android:id="@+id/checkboxAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree to terms and conditions"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@android:color/white" />
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_marginBottom="24dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginBottom="24dp" />
+
+    <Switch
+        android:id="@+id/switchToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
 
 </LinearLayout>
